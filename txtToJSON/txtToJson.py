@@ -5,9 +5,9 @@ import re
 
 def create_arguments():
     parser = argparse.ArgumentParser(
-        description='Limpiar el texto de palabras inutiles.')
+        description='Turns a txt into json needed by the SpERT model..')
 
-    parser.add_argument('--txt', dest='origen_txt', nargs='+',
+    parser.add_argument('--txt', dest='orig_txt', nargs='+',
                         help='Path no the .txt file with the words.')
     parser.add_argument('--json', dest='dest_json', nargs='+',
                         help='Path to the JSON output')

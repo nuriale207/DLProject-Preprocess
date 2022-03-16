@@ -1,7 +1,6 @@
 import argparse
 import json
 import os
-
 from sklearn.model_selection import train_test_split
 
 
@@ -69,7 +68,15 @@ if __name__ == '__main__':
             name = relation["type"]
             entity1=entities[start]["type"]
             entity2=entities[end]["type"]
-            relationsSt+= entity1+" "+name+"entity2"+"\n"
+
+            start1 = entities[start]["start"]
+            end1 = entities[start]["end"]
+
+            start2 = entities[end]["start"]
+            end2 = entities[end]["end"]
+
+            relationsSt+= entity1+" "+name+" "+entity2+"\t"
+            relationsSt+= tokens[start1]+" "+tokens[end1]+" "+name+" "+ tokens[start2]+" "+tokens[end2]+"\n"
             i += 1
         allTokens.extend(tokens)
         allTokensEntities+=tokens_entities_string
@@ -79,7 +86,7 @@ if __name__ == '__main__':
     # print(allTokens)
     text=" "
     text=text.join(allTokens)
-    name=orig_dir.split("/")[1]
+    name=orig_dir.split("/")[-1]
     name=name.split(".")[0]
     file = open(dest_dir + str(name) + "_tokens_entities.txt", 'a')
     file.write(allTokensEntities)

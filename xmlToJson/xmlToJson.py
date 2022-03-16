@@ -37,7 +37,7 @@ if __name__ == '__main__':
             relationTypes.update(xml.getRelationTypes())
         full=json.dumps(jsonFile)
 
-    with open('full.json', 'w') as outfile:
+    with open(dest_dir+'/full.json', 'w') as outfile:
          outfile.write(full)
 
     train,test=train_test_split(jsonFile,test_size=0.15,train_size=0.85)
@@ -53,16 +53,16 @@ if __name__ == '__main__':
     print(relationTypes)
 
     # Using a JSON string
-    with open('e3c_train.json', 'w') as outfile:
+    with open(dest_dir+'/train.json', 'w') as outfile:
         outfile.write(train_json)
 
-    with open('e3c_test.json', 'w') as outfile:
+    with open(dest_dir+'/test.json', 'w') as outfile:
         outfile.write(test_json)
 
-    with open('e3c_dev.json', 'w') as outfile:
+    with open(dest_dir+'/dev.json', 'w') as outfile:
         outfile.write(dev_json)
 
-    with open('e3c_train_dev.json', 'w') as outfile:
+    with open(dest_dir+'/train_dev.json', 'w') as outfile:
         outfile.write(train_dev_json)
 
 
