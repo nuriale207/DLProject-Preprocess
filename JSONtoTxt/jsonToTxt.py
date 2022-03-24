@@ -43,41 +43,51 @@ if __name__ == '__main__':
 
         tokens_entities=[[] for _ in tokens]
         i=0
-        for entity in entities:
-            start=entity["start"]
-            end=entity["end"]
-            name = entity["type"]
-            for j in range(start,end):
-                tokens_entities[j].append(name)
+        if(entities!=None):
+            for entity in entities:
+                start=entity["start"]
+                end=entity["end"]
+                name = entity["type"]
+                for j in range(start,end):
+                    if(j<len(tokens_entities)):
+                        tokens_entities[j].append(name)
 
 
-            # tokens.insert(start+i,beginTag)
-            # tokens.insert(end+1+i,endTag)
-            i+=1
-        tokens_entities_string=""
-        i=0
-        for token in tokens:
-            tokens_entities_string+=token+": "+" ,".join(tokens_entities[i])+"\n"
-            i+=1
+                # tokens.insert(start+i,beginTag)
+                # tokens.insert(end+1+i,endTag)
+                i+=1
+            tokens_entities_string=""
+            j=0
+            for token in tokens:
+                tokens_entities_string+=token+": "+" ,".join(tokens_entities[j])+"\n"
+                j+=1
 
-        i=0
-        relationsSt=""
-        for relation in relations:
-            start = relation["head"]
-            end = relation["tail"]
-            name = relation["type"]
-            entity1=entities[start]["type"]
-            entity2=entities[end]["type"]
+        if relations!=None:
+            k=0
+            relationsSt=""
+            for relation in relations:
+                start = relation["head"]
+                end = relation["tail"]
+                name = relation["type"]
+                entity1=entities[start]["type"]
+                entity2=entities[end]["type"]
 
-            start1 = entities[start]["start"]
-            end1 = entities[start]["end"]
+                start1 = entities[start]["start"]
+                end1 = entities[start]["end"]
 
-            start2 = entities[end]["start"]
-            end2 = entities[end]["end"]
+                start2 = entities[end]["start"]
+                end2 = entities[end]["end"]
 
-            relationsSt+= entity1+" "+name+" "+entity2+"\t"
-            relationsSt+= tokens[start1]+" "+tokens[end1]+" "+name+" "+ tokens[start2]+" "+tokens[end2]+"\n"
-            i += 1
+                relationsSt+= entity1+" "+name+" "+entity2+"\t"
+                if(start1==end1-1 and start2==end2-1):
+                    relationsSt += tokens[start1]+" "+name+" "+ tokens[start2]+"\n"
+                elif(start1!=end1-1 and start2==end2-1):
+                    relationsSt += tokens[start1] + " " + tokens[end1 - 1] + " " + name + " " + tokens[start2] + "\n"
+                elif(start1==end1-1 and start2!=end2-1):
+                    relationsSt += tokens[start1] + " " + name + " " + tokens[start2]+" "+tokens[end2-1]+ "\n"
+                else:
+                    relationsSt+= tokens[start1]+" "+tokens[end1-1]+" "+name+" "+ tokens[start2]+" "+tokens[end2-1]+"\n"
+                k += 1
         allTokens.extend(tokens)
         allTokensEntities+=tokens_entities_string
         allRelations+=relationsSt

@@ -61,16 +61,23 @@ class XmlFile():
         self.events=[]
         i=0
         all_events=self.getEvents()
+        sen=0
         for sentence in self.sentences:
             events=[]
             if(i<=len(all_events)-1):
                 eventStart=int(all_events[i]['end'])
             else:
                 eventStart = sentence['end']+100
-
+            if(sen==(len(self.sentences)-1)):
+                print(" ")
+            sen+=1
             while eventStart<=sentence['end'] and i<=len(all_events)-1:
+
                 start=int(all_events[i]['begin'])-int(sentence["begin"])
                 end=int(all_events[i]['end'])-int(sentence["begin"])
+                if(end>sentence['end']):
+                    end=sentence["end"]
+
                 events.append({"type":all_events[i]['type'],"start":start,"end":end})
 
                 self.event_dict[all_events[i]["id"]]={"sentenceIndex":self.sentences.index(sentence),"eventIndex":len(events)-1}
@@ -105,6 +112,8 @@ class XmlFile():
         for event in self.root.iter('{http:///webanno/custom.ecore}EVENT'):
             # print(event.attrib)
             type=event.attrib['docTimeRel']
+            if(type=="CONTAINS"):
+                print(" ")
             begin = event.attrib['begin']
             end = event.attrib['end']
             id=event.attrib["{http://www.omg.org/XMI}id"]
@@ -271,7 +280,7 @@ class XmlFile():
         return rmls
 
     def getRelations(self):
-        self.relations=[None]*len(self.sentences)
+        self.relations=[[] for i in range(len(self.sentences))]
 
 
         for event in self.root.iter('{http:///webanno/custom.ecore}EVENTTLINKLink'):
@@ -288,7 +297,7 @@ class XmlFile():
             if(self.relations[sentence]==None):
                 self.relations[sentence]=[{"type":role,"head":headIndex,"tail":tailIndex}]
             else:
-                self.relations.append({"type":role,"head":headIndex,"tail":tailIndex})
+                self.relations[sentence].append({"type":role,"head":headIndex,"tail":tailIndex})
 
         for event in self.root.iter('{http:///webanno/custom.ecore}EVENTALINKLink'):
             head=event.attrib["{http://www.omg.org/XMI}id"]
@@ -306,6 +315,41 @@ class XmlFile():
             else:
                 self.relations[sentence].append({"type":role,"head":headIndex,"tail":tailIndex})
 
+        for event in self.root.iter('{http:///webanno/custom.ecore}TIMEX3TimexLinkLink'):
+            head=event.attrib["{http://www.omg.org/XMI}id"]
+            tail=event.attrib['target']
+            role=event.attrib['role']
+            self.relation_types.add(role)
+            sentence=self.event_dict[tail]["sentenceIndex"]
+            tailIndex=self.event_dict[tail]["eventIndex"]
+            eventID=self.timexLink[head]
+            if(eventID==None):
+                eventID=self.timexLink[tail]
+            headIndex=self.event_dict[eventID]["eventIndex"]
+            # if(self.relations[sentence]==None):
+            #     self.relations[sentence]=[{"type":role,"head":headIndex,"tail":tailIndex}]
+            # else:
+            #     self.relations[sentence].append({"type":role,"head":headIndex,"tail":tailIndex})
+            self.relations[sentence].append({"type": role, "head": headIndex, "tail": tailIndex})
+        self.addNoRelations()
+
+    def addNoRelations(self):
+
+        for sentence in range(len(self.sentences)):
+            entities = self.mergeEntities(sentence)
+            for entity1 in range(len(entities)):
+                for entity2 in range(entity1+1,len(entities)-1):
+                    if(self.isRelation(entity1,entity2,sentence)==False):
+                        self.relations[sentence].append({"type":"NO-RELATION","head":entity1,"tail":entity2})
+
+    def isRelation(self, idEntity1,idEntity2,idSentence):
+        relations=self.relations[idSentence]
+        isRelation=False
+        for relation in relations:
+            if(relation["head"]==idEntity1 and relation["tail"]==idEntity2):
+                isRelation=True
+                break
+        return isRelation
 
     def mergeEntities(self,sentence):
         return self.events[sentence] + self.expressions[sentence] + self.actors[sentence] + self.body_parts[sentence] + \
@@ -338,7 +382,8 @@ class XmlFile():
             i+=1
 
     def correctEntityIDs(self,sentenceID,entity):
-
+        if(sentenceID==14):
+            print(" ")
         sentenceStart = self.sentences[sentenceID]["begin"]
         sentenceEnd = self.sentences[sentenceID]["end"]
         # if(entity["type"]=="PATIENT" or entity["type"]=="RML" or entity["type"]=="Body_part" or entity["type"]=="H-PROFESSIONAL"):
@@ -370,6 +415,8 @@ class XmlFile():
                 else:
                     endID=tokens[i]["id"]+1
             i+=1
+        if(endID==entityEnd):
+            endID=startID
         entity["start"]=startID
         entity["end"]=endID
 

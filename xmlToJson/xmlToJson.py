@@ -37,7 +37,7 @@ if __name__ == '__main__':
             relationTypes.update(xml.getRelationTypes())
         full=json.dumps(jsonFile)
 
-    with open(dest_dir+'/full.json', 'w') as outfile:
+    with open(dest_dir+'/'+filename+'.json', 'w') as outfile:
          outfile.write(full)
 
     train,test=train_test_split(jsonFile,test_size=0.15,train_size=0.85)
