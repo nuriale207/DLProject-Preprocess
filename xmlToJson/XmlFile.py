@@ -300,12 +300,18 @@ class XmlFile():
             sentence=self.event_dict[tail]["sentenceIndex"]
             numEntities=len(self.mergeEntities(sentence))
             tailIndex=self.event_dict[tail]["eventIndex"]
-            eventID=self.tLink[head]
-            if(eventID==None):
-                eventID=self.timexLink[tail]
-            headIndex=self.event_dict[eventID]["eventIndex"]
-            if numEntities>headIndex and numEntities>tailIndex:
-                self.relations[sentence].append({"type": role, "head": headIndex, "tail": tailIndex})
+            eventSentence=self.event_dict[tail]["sentenceIndex"]
+            if(eventSentence==sentence):
+                eventID=self.tLink[head]
+                if(eventID==None):
+                    eventID=self.timexLink[tail]
+                headIndex=self.event_dict[eventID]["eventIndex"]
+                headSentence=self.event_dict[eventID]["sentenceIndex"]
+                if(headSentence==eventSentence):
+                    if(headIndex==tailIndex):
+                        print("")
+                    if numEntities>headIndex and numEntities>tailIndex:
+                        self.relations[sentence].append({"type": role, "head": headIndex, "tail": tailIndex})
 
 
 
@@ -318,12 +324,16 @@ class XmlFile():
             numEntities=len(self.mergeEntities(sentence))
 
             tailIndex=self.event_dict[tail]["eventIndex"]
-            eventID=self.aLink[head]
-            if(eventID==None):
-                eventID=self.timexLink[tail]
-            headIndex=self.event_dict[eventID]["eventIndex"]
-            if numEntities > headIndex and numEntities > tailIndex:
-                self.relations[sentence].append({"type": role, "head": headIndex, "tail": tailIndex})
+            eventSentence = self.event_dict[tail]["sentenceIndex"]
+            if (eventSentence == sentence):
+                eventID=self.aLink[head]
+                if(eventID==None):
+                    eventID=self.timexLink[tail]
+                headIndex=self.event_dict[eventID]["eventIndex"]
+                headSentence = self.event_dict[eventID]["sentenceIndex"]
+                if (headSentence == eventSentence):
+                    if numEntities > headIndex and numEntities > tailIndex:
+                        self.relations[sentence].append({"type": role, "head": headIndex, "tail": tailIndex})
 
         for event in self.root.iter('{http:///webanno/custom.ecore}TIMEX3TimexLinkLink'):
             head=event.attrib["{http://www.omg.org/XMI}id"]
@@ -333,12 +343,16 @@ class XmlFile():
             sentence=self.event_dict[tail]["sentenceIndex"]
             numEntities=len(self.mergeEntities(sentence))
             tailIndex=self.event_dict[tail]["eventIndex"]
-            eventID=self.timexLink[head]
-            if(eventID==None):
-                eventID=self.timexLink[tail]
-            headIndex=self.event_dict[eventID]["eventIndex"]
-            if numEntities > headIndex and numEntities > tailIndex:
-                self.relations[sentence].append({"type": role, "head": headIndex, "tail": tailIndex})
+            eventSentence = self.event_dict[tail]["sentenceIndex"]
+            if (eventSentence == sentence):
+                eventID=self.timexLink[head]
+                if(eventID==None):
+                    eventID=self.timexLink[tail]
+                headIndex=self.event_dict[eventID]["eventIndex"]
+                headSentence = self.event_dict[eventID]["sentenceIndex"]
+                if (headSentence == eventSentence):
+                    if numEntities > headIndex and numEntities > tailIndex:
+                        self.relations[sentence].append({"type": role, "head": headIndex, "tail": tailIndex})
 
         #self.addNoRelations()
 
