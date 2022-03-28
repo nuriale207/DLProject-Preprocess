@@ -38,7 +38,7 @@ class XmlFile():
     def getSentenceTokens(self):
         """
             Divides the sentence String by tokens, tokens are defined in '{http:///de/tudarmstadt/ukp/dkpro/core/api/segmentation/type.ecore}Token'.
-            It saves locally a
+            It saves locally the sentence tokens in the variable tokens and their information (text, begin and end indexes...) in tokensID
         :return:
         """
         self.tokens=[]
@@ -386,9 +386,49 @@ class XmlFile():
         i=0
         for sentence in all_info:
             entities=sentence["entities"]
+            if(i==len(all_info)-5):
+                print()
             for entity in entities:
                 self.correctEntityIDs(i,entity)
             i+=1
+
+    # def correctEntityIDs(self,sentenceID,entity):
+    #
+    #     sentenceStart = self.sentences[sentenceID]["begin"]
+    #     sentenceEnd = self.sentences[sentenceID]["end"]
+    #     # if(entity["type"]=="PATIENT" or entity["type"]=="RML" or entity["type"]=="Body_part" or entity["type"]=="H-PROFESSIONAL"):
+    #     #     entityStart=entity["start"]-sentenceStart
+    #     #     entityEnd=entity["end"]-sentenceEnd
+    #     # else:
+    #     entityStart = entity["start"]
+    #     entityEnd = entity["end"]
+    #     i=0
+    #     start=False
+    #     startID =entityStart
+    #     endID=entityEnd
+    #     tokens=self.tokensID[sentenceID]
+    #
+    #     while i<len(tokens):
+    #         tokenBegin = tokens[i]["begin"] - sentenceStart
+    #         tokenEnd = tokens[i]["end"] - sentenceStart
+    #         if tokenBegin>=entityEnd:
+    #             # startID = tokens[i]["id"]
+    #             # endID = tokens[i]["id"]
+    #             endID = tokens[i-1]["id"]+1
+    #             break
+    #         elif tokenEnd>=entityStart:
+    #             if not start:
+    #                 startID=tokens[i]["id"]
+    #                 start=True
+    #             else:
+    #                 endID=tokens[i]["id"]+1
+    #
+    #         i+=1
+    #     # if(endID==entityEnd and endID==startID):
+    #     #     startID=startID-1
+    #
+    #     entity["start"]=startID
+    #     entity["end"]=endID
 
     def correctEntityIDs(self,sentenceID,entity):
 
@@ -407,21 +447,19 @@ class XmlFile():
         tokens=self.tokensID[sentenceID]
 
         while i<len(tokens):
-            # tokenBegin=tokens[i]["begin"]-sentenceStart
-            # tokenEnd=tokens[i]["end"]-sentenceStart
             tokenBegin = tokens[i]["begin"] - sentenceStart
             tokenEnd = tokens[i]["end"] - sentenceStart
             if tokenBegin>=entityEnd:
                 # startID = tokens[i]["id"]
                 # endID = tokens[i]["id"]
-                endID = tokens[i-1]["id"]+1
+                endID = i
                 break
             elif tokenEnd>=entityStart:
                 if not start:
-                    startID=tokens[i]["id"]
+                    startID=i
                     start=True
                 else:
-                    endID=tokens[i]["id"]+1
+                    endID=i
 
             i+=1
         # if(endID==entityEnd and endID==startID):
