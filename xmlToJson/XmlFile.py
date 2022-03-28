@@ -17,10 +17,18 @@ class XmlFile():
         self.relation_types = set()
 
     def getFullText(self):
+        """
+        Gets the full text of the file, that is located in '{http:///uima/cas.ecore}Sofa' section
+        It saves the text in a local variable called text
+        """
         for text in self.root.iter('{http:///uima/cas.ecore}Sofa'):
             self.text=text.attrib['sofaString']
 
     def getSentences(self):
+        """
+            Gets the sentences of the text, which boundaries are located in '{http:///de/tudarmstadt/ukp/dkpro/core/api/segmentation/type.ecore}Sentence' section
+            It saves the sentence text as well as the boundaries in a local dictionary list called sentences
+        """
         self.sentences=[]
         for sentence in self.root.iter('{http:///de/tudarmstadt/ukp/dkpro/core/api/segmentation/type.ecore}Sentence'):
             begin=sentence.attrib['begin']
@@ -28,6 +36,11 @@ class XmlFile():
             self.sentences.append({"sentence":self.text[int(begin):int(end)],"begin":int(begin),"end":int(end)})
 
     def getSentenceTokens(self):
+        """
+            Divides the sentence String by tokens, tokens are defined in '{http:///de/tudarmstadt/ukp/dkpro/core/api/segmentation/type.ecore}Token'.
+            It saves locally a
+        :return:
+        """
         self.tokens=[]
         self.tokensID=[]
         all_tokens=self.getTokens()
@@ -285,15 +298,16 @@ class XmlFile():
             role=event.attrib['role']
             self.relation_types.add(role)
             sentence=self.event_dict[tail]["sentenceIndex"]
+            numEntities=len(self.mergeEntities(sentence))
             tailIndex=self.event_dict[tail]["eventIndex"]
             eventID=self.tLink[head]
             if(eventID==None):
                 eventID=self.timexLink[tail]
             headIndex=self.event_dict[eventID]["eventIndex"]
-            if(self.relations[sentence]==None):
-                self.relations[sentence]=[{"type":role,"head":headIndex,"tail":tailIndex}]
-            else:
-                self.relations[sentence].append({"type":role,"head":headIndex,"tail":tailIndex})
+            if numEntities>headIndex and numEntities>tailIndex:
+                self.relations[sentence].append({"type": role, "head": headIndex, "tail": tailIndex})
+
+
 
         for event in self.root.iter('{http:///webanno/custom.ecore}EVENTALINKLink'):
             head=event.attrib["{http://www.omg.org/XMI}id"]
@@ -301,15 +315,15 @@ class XmlFile():
             role=event.attrib['role']
             self.relation_types.add(role)
             sentence=self.event_dict[tail]["sentenceIndex"]
+            numEntities=len(self.mergeEntities(sentence))
+
             tailIndex=self.event_dict[tail]["eventIndex"]
             eventID=self.aLink[head]
             if(eventID==None):
                 eventID=self.timexLink[tail]
             headIndex=self.event_dict[eventID]["eventIndex"]
-            if(self.relations[sentence]==None):
-                self.relations[sentence]=[{"type":role,"head":headIndex,"tail":tailIndex}]
-            else:
-                self.relations[sentence].append({"type":role,"head":headIndex,"tail":tailIndex})
+            if numEntities > headIndex and numEntities > tailIndex:
+                self.relations[sentence].append({"type": role, "head": headIndex, "tail": tailIndex})
 
         for event in self.root.iter('{http:///webanno/custom.ecore}TIMEX3TimexLinkLink'):
             head=event.attrib["{http://www.omg.org/XMI}id"]
@@ -317,17 +331,16 @@ class XmlFile():
             role=event.attrib['role']
             self.relation_types.add(role)
             sentence=self.event_dict[tail]["sentenceIndex"]
+            numEntities=len(self.mergeEntities(sentence))
             tailIndex=self.event_dict[tail]["eventIndex"]
             eventID=self.timexLink[head]
             if(eventID==None):
                 eventID=self.timexLink[tail]
             headIndex=self.event_dict[eventID]["eventIndex"]
-            if(self.relations[sentence]==None):
-                self.relations[sentence]=[{"type":role,"head":headIndex,"tail":tailIndex}]
-            else:
-                self.relations[sentence].append({"type":role,"head":headIndex,"tail":tailIndex})
-            #self.relations[sentence].append({"type": role, "head": headIndex, "tail": tailIndex})
-        self.addNoRelations()
+            if numEntities > headIndex and numEntities > tailIndex:
+                self.relations[sentence].append({"type": role, "head": headIndex, "tail": tailIndex})
+
+        #self.addNoRelations()
 
     def addNoRelations(self):
 
@@ -409,9 +422,11 @@ class XmlFile():
                     start=True
                 else:
                     endID=tokens[i]["id"]+1
+
             i+=1
-        if(endID==entityEnd):
-            endID=startID
+        # if(endID==entityEnd and endID==startID):
+        #     startID=startID-1
+
         entity["start"]=startID
         entity["end"]=endID
 
