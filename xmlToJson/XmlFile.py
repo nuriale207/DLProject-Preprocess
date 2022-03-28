@@ -15,6 +15,7 @@ class XmlFile():
         self.file_name=file_name
         self.entity_types=set()
         self.relation_types = set()
+        self.entities=[]
 
     def getFullText(self):
         """
@@ -67,13 +68,19 @@ class XmlFile():
         return tokens
 
     def getEntities(self):
-        self.entities=[]
 
+        self.entities=[[] for i in range(len(self.sentences))]
+        self.getSentenceEvents()
+        self.getSentenceExpressions()
+        self.getSentenceActors()
+        self.getSentenceBodyParts()
+        self.getSentenceRML()
 
     def getSentenceEvents(self):
         self.events=[]
         i=0
         all_events=self.getEvents()
+        sen=0
         for sentence in self.sentences:
             events=[]
             if(i<=len(all_events)-1):
@@ -89,8 +96,8 @@ class XmlFile():
                 #     end=sentence["end"]
 
                 events.append({"type":all_events[i]['type'],"start":start,"end":end})
-
-                self.event_dict[all_events[i]["id"]]={"sentenceIndex":self.sentences.index(sentence),"eventIndex":len(events)-1}
+                self.entities[sen].append({"type":all_events[i]['type'],"start":start,"end":end})
+                self.event_dict[all_events[i]["id"]]={"sentenceIndex":self.sentences.index(sentence),"eventIndex":len(self.entities[sen])-1}
                 self.entity_types.add(all_events[i]['type'])
                 if(all_events[i]["TLINK"]!=None):
                     self.addTlinks(all_events[i])
@@ -103,6 +110,7 @@ class XmlFile():
                 else:
                     eventStart = sentence['end'] + 100
             self.events.append(events)
+            sen+=1
 
     def addTlinks(self, event):
         tlinks=event["TLINK"]
@@ -142,6 +150,7 @@ class XmlFile():
         self.expressions=[]
         i=0
         all_expressions=self.getExpressions()
+        sen=0
         for sentence in self.sentences:
             expressions=[]
             if (i <= len(all_expressions) - 1):
@@ -153,7 +162,9 @@ class XmlFile():
                 start=int(all_expressions[i]['begin'])-int(sentence["begin"])
                 end=int(all_expressions[i]['end'])-int(sentence["begin"])
                 expressions.append({"type":all_expressions[i]['type'],"start":start,"end":end})
-                self.event_dict[all_expressions[i]['id']]={"sentenceIndex":self.sentences.index(sentence),"eventIndex":len(expressions)-1}
+                self.entities[sen].append({"type": all_expressions[i]['type'], "start": start, "end": end})
+
+                self.event_dict[all_expressions[i]['id']]={"sentenceIndex":self.sentences.index(sentence),"eventIndex":len(self.entities[sen]) - 1}
                 self.entity_types.add(all_expressions[i]['type'])
                 if(all_expressions[i]["timexlink"]!=None):
                     self.addTxlinks(all_expressions[i])
@@ -163,6 +174,7 @@ class XmlFile():
                 else:
                     eventStart = sentence['end'] + 100
             self.expressions.append(expressions)
+            sen=sen+1
 
     def addTxlinks(self, event):
         tXlinks=event["timexlink"]
@@ -189,6 +201,7 @@ class XmlFile():
         self.actors=[]
         i=0
         all_actors=self.getActors()
+        sen=0
         for sentence in self.sentences:
             actors=[]
             if (i <= len(all_actors) - 1):
@@ -200,7 +213,9 @@ class XmlFile():
                 start=int(all_actors[i]['begin'])-int(sentence["begin"])
                 end=int(all_actors[i]['end'])-int(sentence["begin"])
                 actors.append({"type":all_actors[i]['type'],"start":start,"end":end})
-                self.event_dict[all_actors[i]['id']]={"sentenceIndex":self.sentences.index(sentence),"eventIndex":len(actors)-1}
+                self.entities[sen].append({"type": all_actors[i]['type'], "start": start, "end": end})
+
+                self.event_dict[all_actors[i]['id']]={"sentenceIndex":self.sentences.index(sentence),"eventIndex":len(self.entities[sen])-1}
                 self.entity_types.add(all_actors[i]['type'])
                 i+=1
 
@@ -209,6 +224,7 @@ class XmlFile():
                 else:
                     eventStart = sentence['end'] + 100
             self.actors.append(actors)
+            sen+=1
 
     def getActors(self):
         actors=[]
@@ -224,6 +240,7 @@ class XmlFile():
         self.body_parts=[]
         i=0
         all_body_parts=self.getBodyParts()
+        sen=0
         for sentence in self.sentences:
             body_parts=[]
             if (i <= len(all_body_parts) - 1):
@@ -234,7 +251,9 @@ class XmlFile():
                 start = int(all_body_parts[i]['begin']) - int(sentence["begin"])
                 end = int(all_body_parts[i]['end']) - int(sentence["begin"])
                 body_parts.append({"type": all_body_parts[i]['type'], "start": start, "end": end})
-                self.event_dict[all_body_parts[i]['id']]={"sentenceIndex":self.sentences.index(sentence),"eventIndex":len(body_parts)-1}
+                self.entities[sen].append({"type": all_body_parts[i]['type'], "start": start, "end": end})
+
+                self.event_dict[all_body_parts[i]['id']]={"sentenceIndex":self.sentences.index(sentence),"eventIndex":len(self.entities[sen])-1}
                 self.entity_types.add(all_body_parts[i]['type'])
                 i+=1
 
@@ -243,6 +262,7 @@ class XmlFile():
                 else:
                     eventStart = sentence['end'] + 100
             self.body_parts.append(body_parts)
+            sen+=1
 
     def getBodyParts(self):
         body_parts=[]
@@ -258,6 +278,7 @@ class XmlFile():
         self.rml=[]
         i=0
         all_rml=self.getRML()
+        sen=0
         for sentence in self.sentences:
             rml=[]
             if (i <= len(all_rml) - 1):
@@ -268,7 +289,9 @@ class XmlFile():
                 start = int(all_rml[i]['begin']) - int(sentence["begin"])
                 end = int(all_rml[i]['end']) - int(sentence["begin"])
                 rml.append({"type": all_rml[i]['type'], "start": start, "end": end})
-                self.event_dict[all_rml[i]['id']]={"sentenceIndex":self.sentences.index(sentence),"eventIndex":len(rml)-1}
+                self.entities[sen].append({"type": all_rml[i]['type'], "start": start, "end": end})
+
+                self.event_dict[all_rml[i]['id']]={"sentenceIndex":self.sentences.index(sentence),"eventIndex":len(self.entities[sen])-1}
                 self.entity_types.add(all_rml[i]['type'])
                 i+=1
 
@@ -277,6 +300,7 @@ class XmlFile():
                 else:
                     eventStart = sentence['end'] + 100
             self.rml.append(rml)
+            sen+=1
 
     def getRML(self):
         rmls=[]
@@ -381,7 +405,7 @@ class XmlFile():
         all_info=[]
         for sentence in range(len(self.sentences)):
             info={"tokens":self.tokens[sentence]["tokens"],
-                  "entities":self.mergeEntities(sentence),
+                  "entities":self.entities[sentence],
                   "relations":self.relations[sentence],
                   "orig_id":self.file_name}
             all_info.append(info)
@@ -486,11 +510,7 @@ class XmlFile():
         self.getFullText()
         self.getSentences()
         self.getSentenceTokens()
-        self.getSentenceEvents()
-        self.getSentenceExpressions()
-        self.getSentenceRML()
-        self.getSentenceActors()
-        self.getSentenceBodyParts()
+        self.getEntities()
         # print(self.tLink)
         # print(self.event_dict)
         # print("8925" in self.event_dict)
