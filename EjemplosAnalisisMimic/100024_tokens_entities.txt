@@ -1,0 +1,113 @@
+ 71: PATIENT
+year: PATIENT
+old: PATIENT
+male: PATIENT
+who: 
+presented: BEFORE
+to: 
+his: 
+PCP: BEFORE
+for: 
+[**Name: 
+Initial: 
+(PRE): 
+**]: 
+routine: 
+visit: BEFORE
+with: 
+complaints: BEFORE
+of: 
+recent: 
+onset: 
+fatigue,: 
+dyspnea: BEFORE
+on: 
+exertion,: 
+exertional: 
+throat: Body_part
+discomfort: BEFORE
+and: 
+left: 
+arm.: 
+He: PATIENT
+denied: BEFORE
+any: 
+rest: BEFORE
+pain: BEFORE
+but: 
+reports: BEFORE
+the: 
+discomfort: BEFORE
+and: 
+dyspnea: BEFORE
+occur: BEFORE
+with: 
+minimal: 
+activities: 
+such: 
+as: 
+showering.: 
+He: PATIENT
+was: 
+found: BEFORE
+to: 
+be: 
+hypertensive: BEFORE
+and: 
+was: 
+started: BEFORE
+on: 
+Atenolol: BEFORE
+25mg: 
+daily.: 
+His: 
+EKG: BEFORE
+was: 
+normal: RML
+and: 
+he: PATIENT
+was: 
+sent: IS-CONTAINED
+for: 
+a: 
+nuclear: 
+stress: 
+test.: 
+He: PATIENT
+underwent: 
+a: 
+nuclear: 
+stress: 
+test: BEFORE
+on: 
+[**2671-6-28**]: 
+which: 
+revealed: BEFORE
+inferolateral: 
+ischemia: BEFORE
+and: 
+a: 
+moderate: 
+inferior,: 
+inferolateral,: 
+and: 
+posterolateral: 
+perfusion: BEFORE
+abnormality.: 
+He: PATIENT
+is: 
+now: 
+refereed: BEFORE
+for: 
+cardiac: 
+catheterization.: 
+He: PATIENT
+is: 
+now: 
+being: 
+referred: BEFORE
+to: 
+cardiac: 
+surgery: CONTAINS
+for: 
+revascularization.: 

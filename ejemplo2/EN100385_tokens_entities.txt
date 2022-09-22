@@ -1,0 +1,314 @@
+ A: PATIENT
+45: PATIENT
+year: PATIENT
+old: PATIENT
+female: PATIENT
+with: 
+history: 
+of: 
+sickle: 
+cell: 
+disease: BEFORE
+presented: BEFORE
+with: 
+abdominal: 
+pain: BEFORE
+.: 
+A: 
+CT: 
+scan: BEFORE
+revealed: BEFORE
+an: 
+exophytic: 
+renal: 
+mass: BEFORE
+measuring: BEFORE
+2.9cm: RML
+x: RML
+2.0cm: RML
+x: RML
+2.1cm: RML
+located: 
+on: 
+the: 
+antero-lateral: 
+aspect: 
+of: 
+her: Body_part
+right: Body_part
+kidney: Body_part
+and: 
+an: Body_part
+unremarkable: Body_part
+spleen: Body_part
+.: 
+She: PATIENT
+was: 
+evaluated: BEFORE
+by: 
+urology: 
+and: 
+a: 
+right: 
+partial: 
+nephrectomy: BEFORE
+was: 
+planned: BEFORE
+,: 
+however: 
+on: 
+the: DATE
+day: DATE
+of: 
+the: 
+procedure: BEFORE
+,: 
+the: 
+patient's: PATIENT
+preoperative: PREPOSTEXP
+pregnancy: 
+test: BEFORE
+was: 
+positive: RML
+.: 
+The: 
+procedure: BEFORE
+was: 
+post: 
+postponed: BEFORE
+until: 
+after: 
+she: PATIENT
+delivered: BEFORE
+and: 
+interval: 
+ultrasounds: BEFORE
+were: 
+obtained: 
+throughout: 
+her: 
+pregnancy: BEFORE
+to: 
+monitor: BEFORE
+the: 
+renal: 
+mass: BEFORE
+.: 
+The: 
+lesion: BEFORE
+increased: BEFORE
+minimally: 
+in: 
+size: 
+.: 
+Two: DURATION
+months: DURATION
+after: 
+caesarian: 
+section: 
+delivery: BEFORE
+,: 
+patient: PATIENT
+underwent: 
+an: 
+unremarkable: 
+right: 
+laparoscopic: 
+partial: 
+nephrectomy: BEFORE
+with: 
+individual: 
+artery: Body_part
+and: 
+vein: Body_part
+vascular: 
+occlusion: 
+at: 
+the: 
+level: 
+of: 
+the: Body_part
+renal: Body_part
+hilum: Body_part
+.: 
+A: 
+superficial: 
+liver: Body_part
+laceration: BEFORE
+caused: BEFORE
+by: 
+the: 
+Veress: 
+needle: 
+was: 
+noted: BEFORE
+at: 
+the: 
+beginning: BEFORE
+of: 
+the: 
+procedure: BEFORE
+and: 
+effectively: 
+managed: BEFORE
+using: 
+bipolar: 
+cautery: BEFORE
+.: 
+The: 
+patient's: PATIENT
+post-operative: PREPOSTEXP
+course: BEFORE
+was: 
+notable: BEFORE
+for: 
+marked: 
+thrombocytosis: BEFORE
+with: 
+her: 
+platelet: Body_part
+count: BEFORE
+increasing: BEFORE
+for: 
+her: 
+baseline: 
+of: 
+300,000: RML
+to: 
+a: 
+zenith: 
+of: 
+1.3: RML
+million: RML
+.: 
+She: PATIENT
+was: 
+started: BEFORE
+on: 
+aspirin: 
+therapy: BEFORE
+and: 
+splenomegaly: BEFORE
+was: 
+noted: BEFORE
+on: 
+abdomen: Body_part
+ultrasound: BEFORE
+.: 
+Her: 
+platelet: Body_part
+count: BEFORE
+normalized: BEFORE
+to: 
+334,000: RML
+.: 
+On: 
+pathology: BEFORE
+,: 
+the: 
+renal: 
+mass: BEFORE
+was: 
+classified: BEFORE
+as: 
+a: 
+papillary: 
+renal: 
+neoplasm: BEFORE
+consistent: 
+with: 
+a: 
+translocation: 
+carcinoma: BEFORE
+.: 
+There: 
+was: 
+no: 
+splenic: Body_part
+tissue: Body_part
+in: 
+the: 
+specimen: 
+.: 
+It: 
+was: 
+noted: BEFORE
+that: 
+the: 
+complete: 
+lack: 
+of: 
+staining: BEFORE
+of: 
+any: 
+keratins: 
+or: 
+epithelial: Body_part
+membrane: Body_part
+antigens: 
+was: 
+not: 
+consistent: BEFORE
+with: 
+a: 
+usual: 
+renal: 
+cell: 
+carcinoma: BEFORE
+and: 
+hence: 
+the: 
+diagnosis: 
+of: 
+a: 
+translocation: 
+tumor: BEFORE
+was: 
+made: 
+.: 
+The: PATIENT
+patient: PATIENT
+was: 
+lost: BEFORE
+to: 
+follow: BEFORE
+up: 
+presenting: CONTAINS
+2: DATE
+years: DATE
+later: DATE
+and: 
+a: 
+follow-up: 
+CT: 
+scan: IS-CONTAINED
+noted: IS-CONTAINED
+marked: 
+splenic: 
+atrophy: CONTAINS
+with: 
+several: 
+splenules: 
+.: 
+The: PATIENT
+patient: PATIENT
+was: 
+completely: 
+asymptomatic: CONTAINS
+and: 
+at: 
+the: 
+time: 
+received: IS-CONTAINED
+all: 
+the: 
+post-splenectomy: PREPOSTEXP
+vaccination: IS-CONTAINED
+and: 
+her: 
+platelet: Body_part
+count: CONTAINS
+remained: 
+within: 
+normal: 
+limits: CONTAINS

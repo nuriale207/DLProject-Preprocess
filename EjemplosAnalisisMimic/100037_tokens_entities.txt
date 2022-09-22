@@ -1,0 +1,249 @@
+ 58: RML
+y/o: RML
+M: RML
+presented: BEFORE
+to: 
+[**Hospital1: 
+**]: 
+[**Location: 
+(un): 
+18**]: 
+after: 
+a: 
+syncopal: 
+episode: BEFORE
+today: 
+where: 
+he: PATIENT
+sustained: 
+a: 
+facial: 
+hematoma.: 
+Pt: BEFORE
+remembers: 
+going: BEFORE
+to: 
+the: 
+bathroom: 
+in: 
+the: DATE
+early: DATE
+morning: DATE
+and: 
+then: 
+awoke: BEFORE
+on: 
+the: 
+floor: 
+approx: 
+2hrs: SET
+laterwith: 
+left: 
+sided: 
+facial: 
+bruising: BEFORE
+and: 
+incontinence.: 
+Pt: BEFORE
+nosebleeds: BEFORE
+that: 
+began: BEFORE
+2: DURATION
+days: DURATION
+prior: 
+to: 
+admission.: 
+On: 
+saturday,: 
+he: PATIENT
+was: 
+feeling: 
+lightheaded: BEFORE
+and: 
+developped: BEFORE
+severe: 
+right: 
+thigh: 
+pain.: 
+On: 
+Sunday,: 
+he: PATIENT
+noticed: BEFORE
+decreased: 
+a[**: 
+Location: 
+**]e,: 
+left: Body_part
+thigh: Body_part
+pain: BEFORE
+and: 
+fevers/chills.: 
+On: 
+further: 
+review: BEFORE
+of: 
+symptoms,: 
+pt: BEFORE
+has: 
+been: 
+noticing: BEFORE
+increased: 
+bruising: BEFORE
+and: 
+general: 
+lethargy: BEFORE
+for: 
+the: 
+last: 
+week.: 
+Per: 
+report,: 
+his: OTHER
+wife: OTHER
+has: 
+been: 
+trying: BEFORE
+to: 
+get: 
+him: PATIENT
+to: 
+see: BEFORE
+[**Name8: 
+(MD): 
+**]: 
+MD: BEFORE
+for: 
+months: 
+as: 
+she: PATIENT
+has: 
+been: 
+concerned: BEFORE
+about: 
+his: 
+generalized: 
+Pt: BEFORE
+initially: 
+presented: BEFORE
+to: 
+[**Hospital1: 
+**]: 
+[**Location: 
+(un): 
+**]: 
+and: 
+was: 
+febrile: BEFORE
+to: 
+101.2: 
+and: 
+received: BEFORE
+Vanc: 
+and: 
+Ceftazidime: BEFORE
+for: 
+neutropenic: 
+fever.: 
+He: PATIENT
+underwent: 
+head: Body_part
+CT: IS-CONTAINED
+that: 
+revealed: IS-CONTAINED
+small: 
+foci: 
+of: 
+petechial: 
+hemorrhage: BEFORE
+within: 
+the: Body_part
+left: Body_part
+frontal: Body_part
+lobe: Body_part
+and: 
+small: Body_part
+subarachnoid: Body_part
+Initial: 
+VS: BEFORE
+on: 
+arrival: 
+to: 
+the: 
+[**Hospital1: 
+68**]: 
+ED:: 
+T: BEFORE
+100.4: 
+P: 
+76: 
+BP: 
+110/55: 
+R: 
+18: Body_part
+O2: Body_part
+sat: BEFORE
+99%: 
+RA.: 
+Pt: BEFORE
+was: 
+given: BEFORE
+Acyclovir: 
+for: 
+possible: 
+Zoster.: 
+He: PATIENT
+underwent: 
+CTA: BEFORE
+that: 
+was: 
+negative: RML
+for: 
+PE: BEFORE
+and: 
+received: BEFORE
+2L: RML
+of: 
+NS: 
+IVF.: 
+Pt: BEFORE
+was: 
+being: 
+transfused: BEFORE
+with: 
+a: 
+second: 
+bag: 
+of: 
+plts: 
+prior: 
+to: 
+On: 
+arrival,: 
+pt: BEFORE
+was: 
+complaining: BEFORE
+of: 
+right: Body_part
+&: Body_part
+left: Body_part
+proximal: Body_part
+thigh: Body_part
+pain: BEFORE
+approx: 
+[**7-21**].: 
+Otherwise,: 
+denying: 
+CP,: 
+SOB,: 
+HA,: 
+abd: 
+pain,: 
+nausea,: 
+visual: 
+changes.: 
+He: PATIENT
+was: 
+feeling: 
+exhausted: BEFORE
+and: 
+still: BEFORE

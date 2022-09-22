@@ -1,0 +1,679 @@
+ We: H-PROFESSIONAL
+report: 
+the: 
+case: 
+of: 
+a: PATIENT
+male: PATIENT
+patient: PATIENT
+,: 
+79: 
+years: 
+old: 
+,: 
+diabetic: BEFORE
+for: 
+10: DURATION
+years: DURATION
+on: 
+metformin: 
+,: 
+hypertensive: BEFORE
+for: 
+5: DURATION
+years: DURATION
+on: 
+amilodipine: 
+;: 
+occasional: 
+alcoholic: 
+weaned: BEFORE
+4: DATE
+years: DATE
+ago: DATE
+.: 
+He: PATIENT
+was: 
+initially: 
+admitted: BEFORE
+for: 
+mental: 
+confusion: 
+with: 
+sudden: 
+onset: 
+dysarthria: BEFORE
+dating: 
+back: 
+48: DURATION
+hours: DURATION
+before: 
+.: 
+Initial: 
+assessment: IS-CONTAINED
+found: 
+Glasgow: 
+score: IS-CONTAINED
+(: 
+GCS: 
+): 
+of: 
+12: RML
+/: RML
+15: RML
+(: 
+eye: 
+opening: IS-CONTAINED
+at: 
+5: RML
+,: 
+verbal: 
+response: IS-CONTAINED
+at: 
+2: RML
+,: 
+motor: 
+response: IS-CONTAINED
+at: 
+5: RML
+): 
+,: 
+symmetrical: 
+and: 
+reactive: 
+pupils: Body_part
+,: 
+without: 
+feeling-motor: 
+deficit: IS-CONTAINED
+,: 
+normal: 
+osteotendinous: 
+reflexes: IS-CONTAINED
+,: 
+slightly: 
+polypneic: IS-CONTAINED
+at: 
+24: RML
+cycles: RML
+/: RML
+min: RML
+,: 
+pulsed: 
+oxygen: 
+saturation: IS-CONTAINED
+(: 
+SpO: 
+2: 
+): 
+at: 
+97%: RML
+in: 
+ambient: 
+air: 
+,: 
+he: PATIENT
+was: 
+tachycardic: IS-CONTAINED
+at: 
+115: RML
+bpm: RML
+and: 
+hypertensive: IS-CONTAINED
+at: 
+160: RML
+/: RML
+95: RML
+mmHg: RML
+,: 
+his: 
+capillary: 
+blood: 
+glucose: IS-CONTAINED
+at: 
+2.24: RML
+g: RML
+/: RML
+L: RML
+,: 
+and: 
+glycosuria: 
+on: 
+the: 
+urine: 
+dipstick: 
+test: 
+without: 
+ketonuria: IS-CONTAINED
+.: 
+The: PATIENT
+patient: PATIENT
+was: 
+apyretic: IS-CONTAINED
+.: 
+Arterial: Body_part
+gas: Body_part
+testing: IS-CONTAINED
+showed: IS-CONTAINED
+normal: 
+corrected: 
+anion: 
+gap: 
+metabolic: 
+acidosis: IS-CONTAINED
+,: 
+with: 
+hypokalaemia: IS-CONTAINED
+at: 
+3: RML
+mmol: RML
+/: RML
+L: RML
+and: 
+normal: 
+lactatemia: IS-CONTAINED
+at: 
+0.43: RML
+mmol: RML
+/: RML
+L: RML
+.: 
+Diagnosis: 
+of: 
+diabetes: 
+decompensation: IS-CONTAINED
+was: 
+made: 
+despite: 
+absence: 
+of: 
+ketone: Body_part
+bodies: Body_part
+on: 
+urine: 
+dipstick: 
+test: IS-CONTAINED
+.: 
+After: 
+conditioning: 
+,: 
+the: PATIENT
+patient: PATIENT
+was: 
+put: 
+on: 
+a: 
+hydration: 
+regimen: 
+with: 
+hypokalaemia: 
+correction: IS-CONTAINED
+and: 
+insulin: 
+therapy: IS-CONTAINED
+,: 
+and: 
+then: 
+referred: IS-CONTAINED
+to: 
+intensive: 
+care: 
+for: 
+additional: 
+management: 
+in: 
+face: 
+of: 
+non-improvement: IS-CONTAINED
+in: 
+his: 
+neurological: 
+condition: 
+.: 
+A: 
+brain: 
+scan: IS-CONTAINED
+was: 
+performed: 
+objectifying: 
+multiple: 
+parietal: Body_part
+ischemic: Body_part
+foci: Body_part
+,: 
+chest: Body_part
+scanner: IS-CONTAINED
+showed: IS-CONTAINED
+a: 
+thickening: 
+of: 
+the: 
+septal: Body_part
+and: Body_part
+foci: Body_part
+of: Body_part
+bronchial: Body_part
+dilation: Body_part
+without: 
+sign: 
+of: 
+pneumopathy: IS-CONTAINED
+linked: 
+to: 
+COVID: 
+-: 
+19: 
+infection: 
+;: 
+abdominal: 
+ultrasound: IS-CONTAINED
+did: 
+not: 
+show: IS-CONTAINED
+any: 
+abnormalities: IS-CONTAINED
+.: 
+An: 
+electrocardiogram: IS-CONTAINED
+was: 
+performed: 
+showing: IS-CONTAINED
+no: 
+electrical: 
+signs: 
+of: 
+hypokalaemia: IS-CONTAINED
+or: 
+repolarization: 
+disturbances: IS-CONTAINED
+,: 
+transthoracic: 
+echocardiography: IS-CONTAINED
+was: 
+normal: 
+,: 
+as: 
+was: 
+ultrasound: IS-CONTAINED
+of: 
+supraortic: 
+trunks: 
+.: 
+Laboratory: 
+workup: 
+showed: IS-CONTAINED
+an: 
+elevated: 
+C-reactive: 
+protein: IS-CONTAINED
+(: 
+CRP: 
+): 
+of: 
+45.5: RML
+with: 
+negative: 
+procalcitonin: IS-CONTAINED
+(: RML
+0.04: RML
+ng: RML
+/: RML
+ml: RML
+): 
+,: 
+white: 
+blood: 
+cells: IS-CONTAINED
+at: 
+12,500: RML
+(: IS-CONTAINED
+PNN: IS-CONTAINED
+at: 
+9280: RML
+and: 
+normal: 
+lymphocytes: IS-CONTAINED
+at: 
+2140: RML
+): 
+,: 
+no: 
+thrombocytopenia: IS-CONTAINED
+,: 
+normal: 
+ferritinemia: IS-CONTAINED
+,: 
+fibrinogen: 
+levels: IS-CONTAINED
+elevated: 
+to: 
+5.37: RML
+and: 
+negative: 
+D-dimers: IS-CONTAINED
+.: 
+Natremia: 
+,: 
+magnesemia: 
+,: 
+corrected: 
+serum: 
+calcium: 
+,: 
+phosphoremia: 
+and: 
+thyroid: 
+assessment: IS-CONTAINED
+was: 
+normal: 
+.: 
+SARS-CoV: 
+-: 
+2: 
+reverse: 
+transcription: 
+polymerase: 
+chain: 
+reaction: 
+(: 
+RT-PCR: 
+): 
+by: 
+nasopharyngeal: 
+swab: 
+was: 
+negative: 
+,: 
+COVID: 
+-: 
+19: 
+serology: 
+(: 
+IgM: 
+and: 
+IgG: 
+): 
+was: 
+also: 
+negative: 
+.: 
+Faced: 
+with: 
+concept: 
+of: 
+ischemic: 
+lesions: IS-CONTAINED
+on: 
+a: 
+brain: 
+scan: IS-CONTAINED
+,: 
+anticoagulation: 
+at: 
+a: 
+prophylactic: 
+dose: 
+,: 
+antiplatelet: 
+aggregation: 
+with: 
+aspirin: 
+and: 
+statins: 
+were: 
+initiated: IS-CONTAINED
+as: 
+well: 
+as: 
+an: 
+antibiotic: 
+therapy: IS-CONTAINED
+at: 
+a: 
+meningeal: 
+dose: 
+with: 
+ceftriaxone: 
+pending: 
+results: 
+of: 
+the: 
+lumbar: 
+puncture: 
+which: 
+subsequently: 
+showed: 
+a: 
+clear: 
+liquid: 
+with: 
+a: 
+high: 
+proteinorachia: IS-CONTAINED
+at: 
+0.58g: RML
+/: RML
+l: RML
+(: 
+normal: 
+between: 
+0.15: 
+and: 
+0.45: 
+): 
+,: 
+a: 
+normal: 
+glycorachia: 
+/: 
+blood: 
+sugar: 
+ratio: IS-CONTAINED
+at: 
+0.58: RML
+(: 
+normal: 
+at: 
+0.5: 
+): 
+;: 
+with: 
+a: 
+culture: 
+showing: IS-CONTAINED
+less: 
+than: 
+3: 
+elements: IS-CONTAINED
+,: 
+sterile: IS-CONTAINED
+after: 
+24: DURATION
+hours: DURATION
+.: 
+Cerebral: 
+Magnetic: 
+resonance: 
+angiography: IS-CONTAINED
+performed: 
+on: 
+day: DATE
+2: DATE
+of: 
+admission: 
+showed: IS-CONTAINED
+signs: 
+in: 
+favor: 
+of: 
+vascular: 
+leukopathy: IS-CONTAINED
+,: 
+with: 
+some: 
+calcifications: 
+in: 
+basal: Body_part
+ganglia: Body_part
+and: 
+cortical: 
+atrophy: 
+.: 
+Electroencephalogram: IS-CONTAINED
+showed: IS-CONTAINED
+signs: 
+of: 
+epilepsy: IS-CONTAINED
+,: 
+which: 
+prompted: 
+us: 
+to: 
+retain: 
+the: 
+diagnosis: IS-CONTAINED
+of: 
+nonketotic: 
+hyperglycemia-related: 
+epileptic: 
+seizures: IS-CONTAINED
+.: 
+Anticonvulsant: 
+treatment: IS-CONTAINED
+was: 
+started: IS-CONTAINED
+with: 
+sodium: 
+valproate: 
+.: 
+The: PATIENT
+Patient: PATIENT
+worsened: IS-CONTAINED
+neurologically: 
+despite: 
+correction: 
+of: 
+his: 
+metabolic: 
+acidosis: 
+,: 
+he: PATIENT
+was: 
+intubated: IS-CONTAINED
+on: 
+day: DATE
+3: DATE
+of: 
+his: 
+admission: 
+(: SET
+day: SET
+5: SET
+of: SET
+symptoms: SET
+onset: SET
+): 
+.: 
+A: 
+cerebral: 
+computerized: 
+tomography: 
+(: 
+CT: 
+): 
+scan: IS-CONTAINED
+was: 
+performed: 
+without: 
+showing: IS-CONTAINED
+any: 
+progressive: 
+lesions: IS-CONTAINED
+.: 
+Faced: 
+with: 
+installation: 
+of: 
+lymphopenia: IS-CONTAINED
+(: 
+HIV: 
+serologies: 
+1: 
+and: 
+2: 
+negative: 
+): 
+with: 
+increased: 
+CRP: 
+,: 
+a: 
+multiplex: 
+RT-PCR: 
+in: 
+protected: Body_part
+distal: Body_part
+bronchial: Body_part
+sample: Body_part
+as: 
+well: 
+as: 
+in: 
+Cerebrospinal: Body_part
+fluid: Body_part
+(: Body_part
+CSF: Body_part
+): Body_part
+were: 
+performed: 
+,: 
+the: 
+first: 
+was: 
+positive: 
+to: 
+SARS-CoV: 
+-: 
+2: 
+.: 
+Reverse: 
+transcription: 
+polymerase: 
+chain: 
+reaction: 
+of: 
+SARS-CoV: 
+-: 
+2: 
+in: 
+CSF: 
+was: 
+positive: IS-CONTAINED
+but: 
+with: 
+a: 
+cycle: 
+threshold: 
+(: 
+CT: 
+): 
+of: 
+38.6: 
+.: 
+The: 
+diagnosis: 
+of: 
+SARS-CoV: 
+-: 
+2: 
+encephalopathy: IS-CONTAINED
+was: 
+retained: 
+.: 
+The: PATIENT
+patient: PATIENT
+is: 
+still: 
+in: 
+intensive: 
+care: 

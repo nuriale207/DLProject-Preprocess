@@ -1,0 +1,151 @@
+ 54: 
+year: 
+old: 
+Spanish: 
+speaking: 
+male,: 
+in: 
+the: 
+US: 
+on: 
+vacation,: 
+with: 
+a: 
+questionable: 
+PMH: BEFORE
+of: 
+liver: Body_part
+disease: BEFORE
+presents: 
+after: 
+jumping?falling?: 
+out: 
+a: 
+window.: 
+Per: 
+his: OTHER
+daughter: OTHER
+he: 
+was: 
+drinking: BEFORE
+alcohol: BEFORE
+with: 
+his: OTHER
+son: OTHER
+and: 
+reported: 
+feeling: BEFORE
+that: 
+someone: 
+was: 
+out: BEFORE
+to: 
+kill: BEFORE
+him.: 
+He: PATIENT
+locked: BEFORE
+himself: 
+in: 
+a: 
+second-story: 
+bedroom: 
+and: 
+was: 
+later: 
+found: BEFORE
+by: 
+his: OTHER
+daughter: OTHER
+crawling: BEFORE
+outside.: 
+He: PATIENT
+was: 
+initially: 
+seen: BEFORE
+at: 
+[**Hospital3: 
+**]: 
+and: 
+found: BEFORE
+to: 
+have: 
+opiates: BEFORE
+and: 
+cocaine: BEFORE
+on: 
+UA: BEFORE
+in: 
+the: 
+emergency: 
+department: 
+there.: 
+He: PATIENT
+was: 
+transported: BEFORE
+to: 
+[**Hospital1: 
+22**]: 
+with: 
+b/l: 
+ankle: Body_part
+fractures.: 
+Per: 
+family,: 
+the: 
+pt: BEFORE
+has: 
+been: 
+confused: BEFORE
+at: 
+home.: 
+In: 
+[**Name: 
+(NI): 
+**],: 
+pt: BEFORE
+was: 
+aggitated: BEFORE
+and: 
+received: BEFORE
+haldol: 
+and: 
+ativan.: 
+He: PATIENT
+was: 
+later: 
+somnolent.: 
+EKG: BEFORE
+demonstrated: BEFORE
+atrial: 
+flutter: BEFORE
+with: 
+HRs: BEFORE
+in: 
+110-140's,: 
+rate: BEFORE
+controlled: BEFORE
+in: 
+the: Body_part
+ED: Body_part
+with: 
+IV: 
+diltiazem.: 
+Patient: PATIENT
+is: 
+a: 
+poor: 
+historian,: 
+most: 
+information: 
+obtained: 
+from: 
+his: 
+ROS:: 
++: RML
+b/l: RML
+ankle: Body_part
+pain,: 
+-CP,: 
+-SOB,: 
+-Abdominal: 
+pain: BEFORE

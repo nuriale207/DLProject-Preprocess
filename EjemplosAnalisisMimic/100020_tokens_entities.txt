@@ -1,0 +1,217 @@
+ Mr.: PATIENT
+[**Known: 
+patient: 
+lastname: 
+25575**]: 
+is: 
+a: 
+58: 
+yo: 
+m: 
+w/: 
+multiple: 
+sclerosis: IS-CONTAINED
+and: 
+seizure: IS-CONTAINED
+disorder: BEFORE
+who: 
+presented: BEFORE
+to: 
+an: 
+OSH: 
+for: 
+delusions: BEFORE
+and: 
+AMS: BEFORE
+x: 
+2: 
+days.: 
+At: 
+OSH,: 
+he: PATIENT
+was: 
+noted: BEFORE
+to: 
+have: 
+a: 
+Na: BEFORE
+of: 
+124.: 
+He: PATIENT
+does: 
+have: 
+a: 
+history: 
+of: 
+hyponatremia;: 
+he: PATIENT
+had: 
+a: 
+Na: BEFORE
+of: 
+117: RML
+in: 
+[**4-6**]: 
+but: 
+had: 
+been: 
+in: 
+the: 
+mid: 
+130s: 
+since: 
+then.: 
+He: PATIENT
+has: 
+seen: 
+nephrology.: 
+At: 
+the: 
+OSH,: 
+he: PATIENT
+had: 
+an: 
+approx: 
+45sec: 
+generalized: 
+tonic: 
+clonic: 
+seizure,: 
+received: BEFORE
+1mg: 
+Ativan,: 
+and: 
+transferred: BEFORE
+to: 
+the: 
+ED: 
+at: 
+[**Hospital1: 
+18**].: 
+He: PATIENT
+also: 
+has: 
+a: 
+history: 
+of: 
+seizures: BEFORE
+especially: 
+in: 
+the: 
+setting: 
+of: 
+infection: BEFORE
+and: 
+hyponatremia.: 
+It: 
+is: 
+unclear: IS-CONTAINED
+if: 
+he: PATIENT
+has: 
+had: 
+seizures: BEFORE
+without: 
+an: 
+inciting: 
+event.: 
+He: PATIENT
+is: 
+currently: 
+being: 
+weaned: BEFORE
+off: 
+of: 
+Keppra: 
+and: 
+Gabapentin: BEFORE
+and: 
+is: 
+being: 
+started: BEFORE
+on: 
+Tegretol.: 
+In: 
+the: 
+ER,: 
+his: 
+VS: BEFORE
+were:: 
+97.5;: 
+189/105;: 
+78;: 
+16;: 
+95%: 
+3L.: 
+He: PATIENT
+was: 
+given: BEFORE
+2L: RML
+of: 
+NS.: 
+Given: 
+that: 
+he: PATIENT
+has: 
+had: 
+AMS: BEFORE
+in: 
+the: 
+setting: 
+of: 
+infection: BEFORE
+and: 
+is: 
+known: 
+to: 
+have: 
+chronic: 
+UTIs: BEFORE
+[**2-1**]: 
+indwelling: 
+suprapubic: 
+catheter: 
+and: 
+neurogenic: 
+bladder,: 
+blood: Body_part
+and: 
+urine: Body_part
+cultures: BEFORE
+were: 
+obtained: 
+as: 
+well: 
+as: 
+a: 
+CXR.: 
+He: PATIENT
+had: 
+a: 
+urine: Body_part
+culture: BEFORE
+from: 
+[**1-6**]: 
+that: 
+grew: BEFORE
+pseudomonas: BEFORE
+and: 
+his: 
+CXR: BEFORE
+showed: BEFORE
+a: 
+possible: 
+infiltrate: BEFORE
+and: 
+he: PATIENT
+was: 
+treated: BEFORE
+with: 
+vancomycin: 
+and: 
+cefepime.: 
+A: 
+head: Body_part
+CT: BEFORE
+was: 
+negative.: 

@@ -1,0 +1,190 @@
+ HPI:: 
+57: PATIENT
+y/o: PATIENT ,PATIENT
+Spanish: PATIENT ,PATIENT ,PATIENT
+speaking: PATIENT ,PATIENT ,PATIENT
+female: PATIENT ,PATIENT ,PATIENT
+with: 
+h/o: 
+HTN,: 
+DM: BEFORE
+2,: 
+hyperlipidemia,: 
+CAD: BEFORE
+s/p: 
+4V: 
+CABG: BEFORE
+[**6-1**],: 
+and: 
+asthma: BEFORE
+who: 
+presented: BEFORE
+to: 
+her: 
+PCP: BEFORE
+for: 
+regularly: 
+scheduled: 
+visit,: 
+complained: BEFORE
+of: 
+dizziness,: 
+nausea,: 
+vomiting: BEFORE
+for: 
+one: 
+week,: 
+and: 
+with: 
+chest: Body_part
+pain,: 
+and: 
+was: 
+found: BEFORE
+to: 
+be: 
+hypotensive.: 
+She: PATIENT
+was: 
+sent: BEFORE
+to: 
+the: Body_part
+ED: Body_part
+by: 
+her: 
+PCP.: 
+[**Name10: 
+(NameIs): 
+**]: 
+the: 
+ED: BEFORE
+she: PATIENT
+got: 
+atropine: BEFORE
+x: 
+3: 
+for: 
+bradycardia,: 
+lasix,: 
+and: 
+glucagon: BEFORE
+for: 
+blood: Body_part
+sugar: 
+in: 
+the: 
+30s,: 
+and: 
+was: 
+started: BEFORE
+on: 
+dopamine: BEFORE
+drip: BEFORE
+for: 
+hypotension,: 
+which: 
+was: 
+weaned: BEFORE
+off: 
+once: 
+in: 
+the: 
+CCU: 
+without: 
+futher: 
+hypotension.: 
+Ruled: BEFORE
+out: 
+for: 
+MI.: 
+AST/ALT: 
+and: 
+amylase/lipase: 
+were: 
+normal.: 
+RUQ: BEFORE ,BEFORE
+US: BEFORE ,BEFORE
+done: 
+last: DATE
+month: DATE
+in: 
+[**State: 
+210**]: 
+She: PATIENT
+decribes: BEFORE
+that: 
+she: PATIENT
+had: 
+been: 
+vomiting: BEFORE
+for: 
+one: DURATION
+week: DURATION
+before: 
+going: BEFORE
+to: 
+her: 
+doctor's: 
+visit.: 
+She: PATIENT
+was: 
+vomiting: BEFORE
+almost: 
+daily: SET
+for: 
+one: 
+week.: 
+She: PATIENT
+was: 
+dizzy: BEFORE
+for: 
+most: 
+of: 
+that: 
+week,: 
+getting: 
+worse: BEFORE
+when: 
+going: BEFORE
+from: 
+sitting: BEFORE
+to: 
+standing.: 
+Described: BEFORE
+as: 
+the: 
+room: 
+spinning: BEFORE
+and: 
+lightheadedness.: 
+She: PATIENT
+did: 
+not: 
+have: 
+any: 
+syncope: BEFORE
+or: 
+falls.: 
+Her: 
+chest: Body_part
+pain: BEFORE
+lasted: 
+only: 
+one: DURATION
+minute: DURATION
+and: 
+occured: BEFORE
+after: 
+vomiting.: 
+She: PATIENT
+had: 
+a: 
+mild: 
+cough: BEFORE
+for: 
+a: 
+week,: 
+no: 
+sputum: Body_part
+and: 
+mild: 

@@ -1,0 +1,336 @@
+ 69: RML
+yo: RML
+F: RML
+with: 
+history: 
+of: 
+ESRD: BEFORE
+on: 
+HD,: 
+DM,: 
+recently: DATE
+admitted: BEFORE
+to: 
+[**Hospital1: 
+68**]: 
+for: 
+ORIF: 
+for: 
+left: Body_part
+distal: Body_part
+femur: Body_part
+fracture: BEFORE
+(uncomplicated: 
+hospital: 
+course): 
+referred: BEFORE
+to: 
+ED: Body_part
+today: DATE
+after: 
+she: PATIENT
+developed: 
+acute: 
+change: BEFORE
+in: 
+mental: 
+status: 
+associated: 
+with: 
+decreased: 
+responsiveness: BEFORE
+during: 
+a: 
+dialysis: 
+treatment: BEFORE
+today.: 
+History: BEFORE
+per: OTHER
+daughter: OTHER
+stated: 
+that: 
+she: PATIENT
+last: 
+spoke: BEFORE
+to: 
+her: OTHER ,OTHER
+mother: OTHER ,OTHER
+night: OTHER ,QUANTIFIER
+PTA: BEFORE
+and: 
+she: PATIENT
+was: 
+"fine": 
+(asking: BEFORE
+her: OTHER
+daughter: OTHER
+about: 
+her: 
+finances,: 
+etc.).: 
+She: PATIENT
+denies: BEFORE
+that: 
+her: OTHER
+mother: OTHER
+has: 
+ever: 
+had: 
+a: 
+seizure,: 
+stroke: BEFORE
+in: 
+the: 
+past.: 
+Denies: BEFORE
+any: 
+baseline: 
+weakness: BEFORE
+or: 
+numbness.: 
+States: 
+the: PATIENT
+patient: PATIENT
+was: 
+living: 
+on: 
+her: 
+own: 
+prior: 
+to: 
+her: 
+recent: 
+hip: Body_part
+fracture.: 
+Per: 
+sparse: 
+history: BEFORE
+on: 
+dialysis: BEFORE
+notes,: 
+patient: PATIENT
+was: 
+given: BEFORE ,BEFORE
+percocet: BEFORE ,BEFORE
+at: 
+approximately: 
+9:55AM: RML
+and: 
+at: 
+approximately: 
+10:30AM: 
+developed: IS-CONTAINED
+acute: 
+mental: 
+status: 
+changes,: 
+including: 
+confusion.: 
+Patient: PATIENT
+continued: BEFORE
+through: 
+dialysis: BEFORE
+with: 
+stable: 
+vital: 
+signs: BEFORE
+(BP: BEFORE
+130's-140's/60's,: 
+HR: BEFORE
+40's-50's).: 
+After: 
+com[**: 
+Location: 
+**]n: 
+of: 
+dialysis,: 
+EMS: BEFORE
+was: 
+called: BEFORE
+for: 
+transfer: BEFORE
+to: 
+the: 
+hospital.: 
+EMS: 
+notes: BEFORE
+were: 
+significant: BEFORE
+for: 
+noting: BEFORE
+"rapid: 
+deterioration: BEFORE
+in: 
+mental: 
+status",: 
+right: 
+gaze,: 
+dry: 
+blood: BEFORE
+on: 
+lips,: 
+no: 
+response: BEFORE
+to: 
+pain,: 
+aphasia.: 
+EMS: BEFORE
+noted: BEFORE
+decreased: 
+HR: BEFORE
+to: 
+30's: RML
+x: RML
+2: RML
+on: 
+transfer,: 
+On: 
+presentation: 
+to: 
+ED: BEFORE
+at: 
+[**Hospital1: 
+68**],: 
+exam: BEFORE
+was: 
+notable: BEFORE
+for: 
+minimal: 
+responsiveness,: 
+GCS: 
+13,: 
+withdrawl: BEFORE
+of: 
+all: 
+extremities: 
+to: 
+pain,: 
+following: 
+occasional: 
+commands,: 
+non-verbal: BEFORE
+(groans).: 
+VSS: BEFORE
+with: 
+T: BEFORE
+98.8,: 
+HR: BEFORE
+58,: 
+BP: BEFORE
+132/102,: 
+O2: BEFORE
+sat: BEFORE
+98%.: 
+Labs: BEFORE
+were: 
+notable: BEFORE
+for: 
+WBC: BEFORE
+9.5: RML
+with: 
+86: 
+N: 
+and: 
+2: 
+B,: 
+Cr: BEFORE
+5.1: RML
+(hx: 
+ESRD: BEFORE
+on: 
+HD),: 
+AST: BEFORE
+59,: 
+LDH: BEFORE
+450,: 
+AP: BEFORE
+218,: 
+T: BEFORE ,BEFORE
+bili: BEFORE ,BEFORE
+3.9,: 
+lactate: BEFORE
+2.8.: 
+Blood: Body_part
+cxs: BEFORE
+x: 
+2: 
+were: 
+sent: BEFORE
+in: 
+ED.: 
+Head: Body_part
+CT: BEFORE
+demonstrated: BEFORE
+no: 
+evidence: BEFORE
+of: 
+intracranial: 
+bleed: BEFORE
+or: 
+edema.: 
+CXR: BEFORE
+was: 
+wnl.: 
+MRI/A: 
+scan: BEFORE
+was: 
+performed: 
+(read: 
+pending).: 
+Evaluation: IS-CONTAINED
+by: 
+neuro: BEFORE
+yielded: IS-CONTAINED
+diagnosis: 
+of: 
+possible: 
+seizure: 
+activity.: 
+Pt: BEFORE
+was: 
+given: 
+narcan: BEFORE
+0.4mg: 
+IV: 
+x: 
+1,: 
+Ativan: 
+total: 
+of: 
+2mg: 
+IV,: 
+dilantin: 
+load: BEFORE
+(total: 
+of: 
+2gm: 
+IV).: 
+She: PATIENT
+was: 
+intubated: IS-CONTAINED
+for: 
+airway: Body_part
+protection: IS-CONTAINED
+(given: 
+FFP: BEFORE
+prior: 
+to: 
+intubation: BEFORE
+as: 
+INR: BEFORE
+1.9,: 
+on: 
+coumadin: BEFORE
+as: 
+outpt: BEFORE
+as: 
+s/p: 
+hip: Body_part
+surgery): 
+and: 
+transferred: BEFORE
+to: 
+the: 
+ICU: 
+for: 
+further: 

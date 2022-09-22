@@ -1,0 +1,216 @@
+ This: 
+is: 
+a: PATIENT
+33: PATIENT
+year: PATIENT
+old: PATIENT
+male: PATIENT
+with: 
+no: 
+significant: 
+past: 
+medical: 
+history: BEFORE
+who: 
+initially: 
+presented: BEFORE
+to: 
+the: 
+[**Company: 
+**]: 
+Outpatient: 
+Clinic: 
+on: 
+[**10-27**]: 
+with: 
+four: DURATION
+days: DURATION
+of: 
+high: 
+fevers: BEFORE
+(103: 
+degrees: 
+F),: 
+nonproductive: 
+cough,: 
+malaise,: 
+diffuse: 
+myalgias,: 
+mild: 
+resting: 
+dyspnea,: 
+no: 
+exposure: BEFORE
+to: 
+ill: 
+contacts.: 
+On: 
+[**3486-10-27**]: 
+his: 
+vital: 
+signs: BEFORE
+in: 
+the: 
+office: 
+were: 
+temperature: BEFORE
+99.5,: 
+blood: Body_part
+pressure: BEFORE
+120/85,: 
+heartrate: 
+113: 
+and: 
+respiratory: 
+rate: BEFORE
+20,: 
+oxygen: 
+saturation: BEFORE
+89%: RML
+on: 
+room: 
+air.: 
+Weight: BEFORE
+was: 
+238: 
+lbs.: 
+Nonspecific: 
+pulmonary: 
+examination: BEFORE
+was: 
+ap[**: 
+Location: 
+**]ted: 
+at: 
+the: 
+time.: 
+He: PATIENT
+was: 
+prescribed: BEFORE
+Levaquin: 
+500: 
+mg: 
+p.o.: SET
+q.d.: SET
+and: 
+discharged: BEFORE
+to: 
+home.: 
+He: PATIENT
+represented: BEFORE
+to: 
+his: 
+outpatient: 
+[**Hospital: 
+**]: 
+Clinic: BEFORE
+on: 
+[**3486-11-2**]: 
+complaining: BEFORE
+of: 
+persistent: 
+fever: BEFORE
+to: 
+102: 
+degrees: 
+F,: 
+weakness,: 
+bilious: 
+emesis,: 
+worsening: 
+dyspnea,: 
+and: 
+nonproductive: 
+cough.: 
+Vital: 
+signs: BEFORE
+in: 
+the: 
+office: 
+were: 
+temperature: BEFORE
+97.3,: 
+blood: 
+pressure: BEFORE
+108/70,: 
+respiratory: 
+rate: BEFORE
+20,: 
+heartrate: 
+108,: 
+oxygen: 
+saturation: BEFORE
+70%: RML
+on: 
+room: 
+air.: 
+No: 
+wheezes: BEFORE
+were: 
+noted: BEFORE
+on: 
+examination.: 
+He: PATIENT
+was: 
+given: BEFORE
+1: RML
+gm: RML
+of: 
+Ceftriaxone: BEFORE
+and: 
+sent: BEFORE
+to: 
+the: 
+Emergency: 
+Department: 
+where: 
+he: PATIENT
+received: 
+normal: 
+saline: IS-CONTAINED
+and: 
+1: RML
+gm: RML
+of: 
+Vancomycin.: 
+He: PATIENT
+denied: 
+pleuritic: 
+chest: Body_part
+pain.: 
+He: PATIENT
+has: 
+no: 
+risk: BEFORE
+factors: BEFORE
+for: 
+human: 
+immunodeficiency: 
+virus.: 
+He: PATIENT
+denies: IS-CONTAINED
+a: 
+history: 
+of: 
+seizure: 
+disorder,: 
+alcohol: 
+use,: 
+recent: 
+somnolence,: 
+or: 
+symptoms: BEFORE
+of: 
+gastroesophageal: 
+reflux: 
+disease.: 
+He: PATIENT
+was: 
+transferred: BEFORE
+to: 
+the: 
+Intensive: 
+Care: 
+Unit: 
+on: 
+arrival.: 

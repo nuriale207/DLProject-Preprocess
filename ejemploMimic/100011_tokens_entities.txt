@@ -1,0 +1,164 @@
+ 21: 
+y.o.: 
+male: 
+helmeted: 
+moped: 
+rider: 
+who: 
+struck: BEFORE
+a: 
+tree: 
+with: 
+reported: 
+GCS: BEFORE
+of: 
+6: RML
+on: 
+the: 
+scene.: 
+Patient: PATIENT
+was: 
+transported: BEFORE
+to: 
+OSH: 
+and: 
+noted: BEFORE
+to: 
+have: 
+a: 
+right: Body_part
+sided: Body_part
+open: Body_part
+femur: Body_part
+fracture.: 
+He: PATIENT
+received: BEFORE
+antibiotics: BEFORE
+and: 
+was: 
+intubated: IS-CONTAINED
+prior: 
+to: 
+transfer.: 
+Patient: PATIENT
+was: 
+transported: BEFORE
+and: 
+had: 
+radiographic: 
+studies: IS-CONTAINED
+performed: 
+that: 
+showed: BEFORE
+right: Body_part
+femur: Body_part
+fracture,: 
+SAH,: 
+grade: 
+II: 
+liver: 
+lac,: 
+pulmonary: 
+contusions,: 
+and: 
+small: 
+PTX.: 
+Patient: PATIENT
+reportedly: 
+received: BEFORE
+1: 
+unit: 
+of: 
+pRBCs: 
+in: 
+the: Body_part
+ED: Body_part
+and: 
+was: 
+placed: IS-CONTAINED
+into: 
+a: 
+traction: 
+splint: 
+ 21: 
+y.o.: 
+male: 
+helmeted: 
+moped: 
+rider: 
+who: 
+struck: BEFORE
+a: 
+tree: 
+with: 
+reported: 
+GCS: BEFORE
+of: 
+6: RML
+on: 
+the: 
+scene.: 
+Patient: PATIENT
+was: 
+transported: BEFORE
+to: 
+OSH: 
+and: 
+noted: BEFORE
+to: 
+have: 
+a: 
+right: Body_part
+sided: Body_part
+open: Body_part
+femur: Body_part
+fracture.: 
+He: PATIENT
+received: BEFORE
+antibiotics: BEFORE
+and: 
+was: 
+intubated: IS-CONTAINED
+prior: 
+to: 
+transfer.: 
+Patient: PATIENT
+was: 
+transported: BEFORE
+and: 
+had: 
+radiographic: 
+studies: IS-CONTAINED
+performed: 
+that: 
+showed: BEFORE
+right: Body_part
+femur: Body_part
+fracture,: 
+SAH,: 
+grade: 
+II: 
+liver: 
+lac,: 
+pulmonary: 
+contusions,: 
+and: 
+small: 
+PTX.: 
+Patient: PATIENT
+reportedly: 
+received: BEFORE
+1: 
+unit: 
+of: 
+pRBCs: 
+in: 
+the: Body_part
+ED: Body_part
+and: 
+was: 
+placed: IS-CONTAINED
+into: 
+a: 
+traction: 
+splint: 

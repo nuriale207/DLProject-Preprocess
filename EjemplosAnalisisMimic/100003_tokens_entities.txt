@@ -1,0 +1,253 @@
+ Mr.: PATIENT
+[**Known: 
+patient: 
+lastname: 
+30075**]: 
+is: 
+a: 
+59M: 
+w: 
+HepC: 
+cirrhosis: BEFORE
+c/b: 
+grade: 
+I/II: 
+esophageal: 
+varices: BEFORE
+and: 
+portal: 
+gastropathy: BEFORE
+(last: 
+EGD: BEFORE
+[**3-/2705**]),: 
+who: 
+p/w: 
+coffee-ground: 
+emesis: BEFORE
+and: 
+melena: 
+x2: 
+days.: 
+Pt: BEFORE
+was: 
+in: 
+his: 
+USOH: BEFORE
+until: 
+about: 
+2-3: DURATION
+days: DURATION
+PTA,: 
+when: 
+he: PATIENT
+began: BEFORE
+experiencing: 
+intermittent: 
+nausea.: 
+He: PATIENT
+had: 
+2-3: 
+episodes: 
+of: 
+coffee-ground: 
+emesis: BEFORE
+and: 
+1: 
+episode: 
+of: 
+tarry: 
+black: 
+stool: BEFORE
+in: 
+the: 
+morning: QUANTIFIER
+of: 
+admission.: 
+He: PATIENT
+reports: IS-CONTAINED
+some: 
+lightheadedness: BEFORE
+which: 
+is: 
+not: 
+new,: 
+but: 
+denies: IS-CONTAINED
+frank: 
+hematemesis,: 
+BRBPR,: 
+abdominal: 
+pain,: 
+fever,: 
+chills,: 
+significant: 
+increases: BEFORE
+in: 
+his: 
+abdominal: 
+girth.: 
+He: PATIENT
+denies: IS-CONTAINED
+drinking: BEFORE
+or: 
+medication: 
+non-compliance.: 
+He: PATIENT
+also: 
+reports: IS-CONTAINED
+taking: BEFORE
+naproxen: 
+for: 
+back: Body_part
+pain: BEFORE
+2-3: SET
+times: SET
+a: SET
+day: SET
+in: 
+the: 
+recent: 
+In: 
+the: 
+ED,: 
+his: 
+vitals: BEFORE
+were: 
+97.4,: 
+93/41,: 
+69,: 
+18,: RML
+100%: RML
+on: 
+RA.: 
+He: PATIENT
+was: 
+given: BEFORE
+4L: 
+NS: 
+IV,: 
+protonix: BEFORE
+40mg: 
+IV,: 
+started: BEFORE
+on: 
+an: 
+octreotide: 
+drip.: 
+He: PATIENT
+had: 
+guaiac: 
+positive: 
+brown: 
+stool: BEFORE
+on: 
+rectal: 
+exam.: 
+He: PATIENT
+was: 
+seen: BEFORE
+by: 
+the: 
+liver: 
+fellow: 
+in: 
+the: Body_part
+ED: Body_part
+who: 
+felt: BEFORE
+this: 
+was: 
+unlikely: BEFORE
+a: 
+variceal: 
+bleed: BEFORE
+and: 
+recommended: 
+work: BEFORE
+up: 
+for: 
+infection.: 
+An: 
+NG: 
+tube: 
+was: 
+attempted,: 
+however,: 
+patient: PATIENT
+was: 
+unable: BEFORE
+to: 
+tolerate: BEFORE
+it: 
+in: 
+the: 
+ED.: 
+Abdominal: 
+ultrasound: BEFORE
+was: 
+done: 
+which: 
+showed: BEFORE
+a: 
+patent: 
+portal: 
+vein,: 
+scant: 
+ascites: BEFORE
+but: 
+not: 
+enough: 
+to: 
+tap.: 
+BP: BEFORE
+dropped: BEFORE
+to: 
+80/34,: 
+pt: BEFORE
+transferred: BEFORE
+to: 
+MICU: 
+for: 
+hemodynamic: 
+monitoring.: 
+In: 
+the: 
+MICU,: 
+pt: BEFORE
+was: 
+given: BEFORE
+3: 
+pRBC,: 
+Hct: BEFORE
+bumped: BEFORE
+from: 
+21.3: RML
+to: 
+28.: 
+Started: BEFORE
+on: 
+norepinephrine: 
+gtt: BEFORE
+for: 
+a: 
+few: 
+hours,: 
+but: 
+BP: BEFORE
+stabilized.: 
+On: 
+transfer: BEFORE
+to: 
+the: 
+floor,: 
+remains: 
+hemodynamically: BEFORE
+stable.: 
+Feels: BEFORE
+good,: 
+denies: 
+tarry: 
+or: 
+bloody: 
+BMs,: 
+emesis.: 

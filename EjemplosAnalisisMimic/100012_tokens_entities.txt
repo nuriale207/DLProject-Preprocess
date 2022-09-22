@@ -1,0 +1,83 @@
+ 67: PATIENT
+year: PATIENT
+old: PATIENT
+man: PATIENT
+with: 
+known: 
+coronary: Body_part
+artery: Body_part
+disease-s/p: 
+stents: 
+x: 
+6(2004x5: 
+and: 
+[**10-9**]): 
+who: 
+developed: 
+exertional: 
+angina: BEFORE
+while: 
+walking: BEFORE
+[**1-25**].: 
+Angina: BEFORE
+resolved: BEFORE
+w/: 
+rest: BEFORE
+after: 
+few: 
+minutes.: 
+Angina: BEFORE
+recurred: BEFORE
+[**1-27**],: 
+patient: PATIENT
+was: 
+brought: BEFORE
+to: 
+[**Hospital: 
+**]: 
+Med: BEFORE
+Ctr: BEFORE
+where: 
+enzymes: BEFORE
+were: 
+negative.: 
+He: PATIENT
+had: 
+cardiac: 
+catheterization: IS-CONTAINED
+which: 
+showed:: 
+tapering: 
+distal: 
+LM,70%: 
+osteal: 
+LAD,90%: 
+mid: 
+RCA.: 
+LVEF: BEFORE
+60%: RML
+by: 
+LVgram.: 
+He: PATIENT
+was: 
+then: 
+transferred: BEFORE
+to: 
+[**Hospital1: 
+68**]: 
+for: 
+surgical: 
+management: BEFORE
+of: 
+his: 
+coronary: 
+artery: 
+disease.: 
+At: 
+the: 
+time: 
+of: 
+transfer: 
+he: PATIENT
+was: 
+pain: BEFORE

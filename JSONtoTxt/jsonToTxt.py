@@ -69,25 +69,26 @@ if __name__ == '__main__':
                 start = relation["head"]
                 end = relation["tail"]
                 name = relation["type"]
-                entity1=entities[start]["type"]
-                entity2=entities[end]["type"]
+                if(name!="NO-RELATION"):
+                    entity1=entities[start]["type"]
+                    entity2=entities[end]["type"]
 
-                start1 = entities[start]["start"]
-                end1 = entities[start]["end"]
+                    start1 = entities[start]["start"]
+                    end1 = entities[start]["end"]
 
-                start2 = entities[end]["start"]
-                end2 = entities[end]["end"]
+                    start2 = entities[end]["start"]
+                    end2 = entities[end]["end"]
 
-                relationsSt+= entity1+" "+name+" "+entity2+"\t"
-                if(start1==end1-1 and start2==end2-1):
-                    relationsSt += tokens[start1]+" "+name+" "+ tokens[start2]+"\n"
-                elif(start1!=end1-1 and start2==end2-1):
-                    relationsSt += tokens[start1] + " " + tokens[end1 - 1] + " " + name + " " + tokens[start2] + "\n"
-                elif(start1==end1-1 and start2!=end2-1):
-                    relationsSt += tokens[start1] + " " + name + " " + tokens[start2]+" "+tokens[end2-1]+ "\n"
-                else:
-                    relationsSt+= tokens[start1]+" "+tokens[end1-1]+" "+name+" "+ tokens[start2]+" "+tokens[end2-1]+"\n"
-                k += 1
+                    relationsSt+= entity1+" "+name+" "+entity2+"\t"
+                    if(start1==end1-1 and start2==end2-1):
+                        relationsSt += tokens[start1]+" "+name+" "+ tokens[start2]+"\n"
+                    elif(start1!=end1-1 and start2==end2-1):
+                        relationsSt += tokens[start1] + " " + tokens[end1 - 1] + " " + name + " " + tokens[start2] + "\n"
+                    elif(start1==end1-1 and start2!=end2-1):
+                        relationsSt += tokens[start1] + " " + name + " " + tokens[start2]+" "+tokens[end2-1]+ "\n"
+                    else:
+                        relationsSt+= tokens[start1]+" "+tokens[end1-1]+" "+name+" "+ tokens[start2]+" "+tokens[end2-1]+"\n"
+                    k += 1
         allTokens.extend(tokens)
         allTokensEntities+=tokens_entities_string
         allRelations+=relationsSt

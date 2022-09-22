@@ -1,0 +1,296 @@
+ A: PATIENT
+3: PATIENT
+years: PATIENT
+old: PATIENT
+boy: PATIENT
+without: 
+any: 
+particular: 
+diseases: 
+history: IS-CONTAINED
+,: 
+admitted: IS-CONTAINED
+to: 
+the: 
+emergency: 
+room: 
+for: 
+a: 
+bipolar: 
+trauma: IS-CONTAINED
+with: 
+a: 
+left: 
+hemicorporal: 
+point: 
+of: 
+impact: 
+following: 
+a: 
+domestic: 
+accident: 
+.: 
+The: 
+delay: 
+to: 
+consult: IS-CONTAINED
+was: 
+5: DURATION
+hours: DURATION
+after: 
+the: 
+incident: 
+.: 
+The: 
+clinical: 
+examination: IS-CONTAINED
+at: 
+admission: IS-CONTAINED
+had: 
+showed: IS-CONTAINED
+a: Body_part
+deformed: Body_part
+left: Body_part ,Body_part
+superior: Body_part ,Body_part
+member: Body_part ,Body_part ,Body_part
+,: 
+painful: IS-CONTAINED
+on: 
+palpation: 
+with: 
+the: 
+presence: IS-CONTAINED
+of: 
+the: 
+humeral: 
+pulse: IS-CONTAINED
+and: 
+a: 
+right: 
+inferior: 
+member: 
+shortened: 
+and: 
+flexed: 
+,: 
+the: 
+thigh: 
+slightly: 
+in: 
+adduction: 
+,: 
+internal: 
+rotation: 
+with: 
+the: 
+member: 
+.: 
+A: 
+radiological: 
+assessment: IS-CONTAINED
+was: 
+performed: 
+immediately: 
+;: 
+including: 
+a: 
+standard: 
+X-ray: IS-CONTAINED
+of: 
+the: Body_part
+pelvis: Body_part ,Body_part
+which: Body_part
+showed: IS-CONTAINED ,Body_part
+a: Body_part
+dislocated: Body_part
+head: Body_part ,Body_part
+of: Body_part ,Body_part
+the: Body_part ,Body_part
+right: Body_part ,Body_part
+femur: Body_part ,Body_part
+,: 
+completed: 
+secondarily: 
+by: 
+a: 
+CT: 
+Scan: IS-CONTAINED
+of: 
+the: 
+hip: Body_part
+confirming: IS-CONTAINED
+the: 
+posterior: 
+type: 
+of: 
+the: 
+dislocation: 
+isolated: 
+from: 
+any: 
+fractures: 
+of: 
+the: 
+head: 
+of: 
+the: 
+femur: 
+.: 
+The: 
+standard: 
+radiography: IS-CONTAINED
+of: 
+the: Body_part
+left: Body_part
+shoulder: Body_part
+showed: IS-CONTAINED
+a: 
+Salter: 
+I: 
+epiphyseal: 
+separation: IS-CONTAINED
+of: 
+the: 
+humerus: Body_part
+.: 
+After: 
+one: DURATION
+hour: DURATION
+,: 
+we: 
+performed: 
+an: 
+orthopedic: 
+reduction: IS-CONTAINED
+of: 
+the: 
+dislocated: 
+hip: Body_part
+monitored: 
+under: 
+scope: 
+,: 
+with: 
+placement: IS-CONTAINED
+of: 
+a: 
+pelvic: 
+splint: 
+for: 
+an: 
+analgesic: 
+aim: 
+to: 
+be: 
+kept: 
+during: 
+three: DURATION
+weeks: DURATION
+.: 
+The: 
+radiological: 
+results: IS-CONTAINED
+were: 
+satisfactory: 
+with: 
+a: 
+restored: IS-CONTAINED
+bilateral: 
+symmetry: IS-CONTAINED
+of: 
+the: 
+articular: 
+anatomy: 
+.: 
+The: 
+Salter: 
+I: 
+detachment: IS-CONTAINED
+of: 
+the: 
+humerus: Body_part
+was: 
+orthopedically: 
+reduced: IS-CONTAINED
+then: 
+immobilized: IS-CONTAINED
+by: 
+a: DURATION
+thoracoabdominal: DURATION
+plaster: DURATION
+be: DURATION
+kept: DURATION
+during: DURATION
+a: DURATION
+month: DURATION
+.: 
+The: PATIENT
+child: PATIENT
+has: 
+been: 
+discharged: IS-CONTAINED
+the: 
+next: DATE
+day: DATE
+.: 
+Revised: IS-CONTAINED
+after: 
+a: DURATION
+month: DURATION
+,: 
+showed: IS-CONTAINED
+a: 
+stable: 
+left: Body_part
+hip: Body_part
+on: 
+the: 
+clinical: 
+examination: 
+.: 
+In: 
+the: Body_part ,Body_part
+decline: Body_part ,Body_part
+of: Body_part ,Body_part
+2: DURATION ,Body_part ,Body_part
+years: DURATION ,Body_part ,Body_part
+,: Body_part ,Body_part
+we: Body_part ,Body_part
+haven't: Body_part ,Body_part
+noticed: IS-CONTAINED ,Body_part ,Body_part
+any: Body_part ,Body_part
+recidivism: Body_part ,Body_part
+and: Body_part ,Body_part
+the: Body_part ,Body_part
+functional: Body_part ,Body_part
+results: IS-CONTAINED ,Body_part ,Body_part
+were: Body_part ,Body_part
+good: Body_part ,Body_part
+;: Body_part ,Body_part
+On: Body_part ,Body_part
+the: Body_part ,Body_part
+radiography: IS-CONTAINED ,Body_part ,Body_part
+we: Body_part ,Body_part
+do: Body_part ,Body_part
+not: Body_part ,Body_part
+have: Body_part ,Body_part
+any: Body_part ,Body_part
+signs: IS-CONTAINED ,Body_part ,Body_part
+of: Body_part ,Body_part
+avascular: Body_part ,Body_part
+necrosis: IS-CONTAINED ,Body_part ,Body_part
+no: Body_part ,Body_part
+changes: IS-CONTAINED ,Body_part ,Body_part
+of: Body_part ,Body_part
+the: Body_part ,Body_part
+head: Body_part ,Body_part ,Body_part
+of: Body_part ,Body_part ,Body_part
+femur: Body_part ,Body_part ,Body_part
+,: Body_part ,Body_part
+of: Body_part ,Body_part
+the: Body_part ,Body_part
+acetabulum: Body_part ,Body_part
+or: Body_part
+the: Body_part
+joint: Body_part
+space: Body_part
