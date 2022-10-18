@@ -51,7 +51,19 @@ if __name__ == '__main__':
 
     print(entityTypes)
     print(relationTypes)
+    def generate_types_file(entityTypes, relationTypes):
+        entities={}
+        relations={}
 
+        for entity in entityTypes:
+            entities[entity]={"short": entity, "verbose": entity}
+
+        for relation in relationTypes:
+            relations[relation]= {"short": relation, "verbose": relation, "symmetric": False}
+        types_json={"entities":entities, "relations":relations}
+        return types_json
+
+    types_json=json.dumps(generate_types_file(entityTypes,relationTypes))
     # Using a JSON string
     with open(dest_dir+'/e3c_train.json', 'w') as outfile:
         outfile.write(train_json)
@@ -66,3 +78,5 @@ if __name__ == '__main__':
         outfile.write(train_dev_json)
 
 
+    with open(dest_dir+'/e3c_types.json', 'w') as outfile:
+        outfile.write(types_json)
