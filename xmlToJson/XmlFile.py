@@ -1,9 +1,5 @@
 import xml.etree.ElementTree as ET
 import json
-
-
-
-
 class XmlFile():
     def __init__(self, file_path,file_name):
         self.tree=ET.parse(file_path)
@@ -24,6 +20,8 @@ class XmlFile():
         """
         for text in self.root.iter('{http:///uima/cas.ecore}Sofa'):
             self.text=text.attrib['sofaString']
+            self.text=remove_accents(self.text)
+        #Prueba deployment
 
     def getSentences(self):
         """
@@ -519,3 +517,16 @@ class XmlFile():
         all_info=self.mergeTokensEntitiesRelations()
         self.correctIDs(all_info)
         return all_info
+
+def remove_accents(s):
+    replacements = (
+        ("á", "a"),
+        ("é", "e"),
+        ("í", "i"),
+        ("ó", "o"),
+        ("ú", "u"),
+        ("ñ", "n")
+    )
+    for a, b in replacements:
+        s = s.replace(a, b).replace(a.upper(), b.upper())
+    return s
