@@ -9,11 +9,11 @@ from XmlFile import XmlFile
 
 def create_arguments():
     parser = argparse.ArgumentParser(
-        description='This runnable converts the XML files in the mentioned directory into train, '
-                    'test, dev and train_dev divisions needed by the SpERT model.')
+        description='This runnable converts the XML files contained in train test dev folders in the mentioned directory into train, '
+                    'test, dev and train_dev JSON divisions needed by the SpERT model.')
 
     parser.add_argument('--dir', dest='orig_dir', nargs='+',
-                        help='Path to the directory that has the XML files.')
+                        help='Path to the directory that has the XML files inside train test dev folders.')
     parser.add_argument('--dest', dest='dest_dir', nargs='+',
                         help='Path to the directory to save the JSON output.')
     args = parser.parse_args()
@@ -21,62 +21,85 @@ def create_arguments():
 
 if __name__ == '__main__':
     args = create_arguments()
-    orig_dir=args.orig_dir[0]
-    dest_dir=args.dest_dir[0]
-    jsonFile=[]
-    entityTypes=set()
-    relationTypes=set()
-    for filename in os.listdir(orig_dir):
+    orig_dir = args.orig_dir[0]
+    dest_dir = args.dest_dir[0]
+
+    train_dir=orig_dir+"/train"
+    test_dir=orig_dir+"/test"
+    dev_dir=orig_dir+"/dev"
+
+    #Train
+    trainFile = []
+    entityTypes = set()
+    relationTypes = set()
+    for filename in os.listdir(train_dir):
         f = os.path.join(orig_dir, filename)
         # checking if it is a file
         if os.path.isfile(f):
-            xml=XmlFile(f,filename)
-            jsonInfo=xml.xmlToJson()
-            jsonFile=jsonFile+jsonInfo
+            xml = XmlFile(f, filename)
+            jsonInfo = xml.xmlToJson()
+            trainFile = trainFile + jsonInfo
             entityTypes.update(xml.getEntityTypes())
             relationTypes.update(xml.getRelationTypes())
-        full=json.dumps(jsonFile)
 
-    with open(dest_dir+'/'+filename+'.json', 'w') as outfile:
-         outfile.write(full)
+    train_json = json.dumps(trainFile)
 
-    train,test=train_test_split(jsonFile,test_size=0.15,train_size=0.85)
-    train,dev=train_test_split(train,test_size=0.176,train_size=0.823)
+    # Dev
+    devFile = []
+    for filename in os.listdir(dev_dir):
+        f = os.path.join(orig_dir, filename)
+        # checking if it is a file
+        if os.path.isfile(f):
+            xml = XmlFile(f, filename)
+            jsonInfo = xml.xmlToJson()
+            devFile = devFile + jsonInfo
+            entityTypes.update(xml.getEntityTypes())
+            relationTypes.update(xml.getRelationTypes())
 
-    jsonFile2=json.dumps(jsonFile)
-    train_json=json.dumps(train)
-    test_json=json.dumps(test)
-    dev_json=json.dumps(dev)
-    train_dev_json=json.dumps(train+dev)
+    dev_json = json.dumps(devFile)
 
-    print(entityTypes)
-    print(relationTypes)
+    # Test
+    testFile = []
+    for filename in os.listdir(test_dir):
+        f = os.path.join(orig_dir, filename)
+        # checking if it is a file
+        if os.path.isfile(f):
+            xml = XmlFile(f, filename)
+            jsonInfo = xml.xmlToJson()
+            testFile = testFile + jsonInfo
+            entityTypes.update(xml.getEntityTypes())
+            relationTypes.update(xml.getRelationTypes())
+
+    test_json = json.dumps(testFile)
+
+
+    train_dev_json=json.dumps(trainFile+devFile)
     def generate_types_file(entityTypes, relationTypes):
-        entities={}
-        relations={}
+        entities = {}
+        relations = {}
 
         for entity in entityTypes:
-            entities[entity]={"short": entity, "verbose": entity}
+            entities[entity] = {"short": entity, "verbose": entity}
 
         for relation in relationTypes:
-            relations[relation]= {"short": relation, "verbose": relation, "symmetric": False}
-        types_json={"entities":entities, "relations":relations}
+            relations[relation] = {"short": relation, "verbose": relation, "symmetric": False}
+        types_json = {"entities": entities, "relations": relations}
         return types_json
 
-    types_json=json.dumps(generate_types_file(entityTypes,relationTypes))
+
+    types_json = json.dumps(generate_types_file(entityTypes, relationTypes))
     # Using a JSON string
-    with open(dest_dir+'/e3c_train.json', 'w') as outfile:
+    with open(dest_dir + '/train.json', 'w') as outfile:
         outfile.write(train_json)
 
-    with open(dest_dir+'/e3c_test.json', 'w') as outfile:
+    with open(dest_dir + '/test.json', 'w') as outfile:
         outfile.write(test_json)
 
-    with open(dest_dir+'/e3c_dev.json', 'w') as outfile:
+    with open(dest_dir + '/dev.json', 'w') as outfile:
         outfile.write(dev_json)
 
-    with open(dest_dir+'/e3c_train_dev.json', 'w') as outfile:
+    with open(dest_dir + '/e3c_train_dev.json', 'w') as outfile:
         outfile.write(train_dev_json)
 
-
-    with open(dest_dir+'/e3c_types.json', 'w') as outfile:
+    with open(dest_dir + '/e3c_types.json', 'w') as outfile:
         outfile.write(types_json)
