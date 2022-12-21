@@ -98,8 +98,8 @@ if __name__ == '__main__':
     with open(dest_dir + '/dev.json', 'w') as outfile:
         outfile.write(dev_json)
 
-    with open(dest_dir + '/e3c_train_dev.json', 'w') as outfile:
+    with open(dest_dir + '/train_dev.json', 'w') as outfile:
         outfile.write(train_dev_json)
 
-    with open(dest_dir + '/e3c_types.json', 'w') as outfile:
+    with open(dest_dir + '/types.json', 'w') as outfile:
         outfile.write(types_json)
